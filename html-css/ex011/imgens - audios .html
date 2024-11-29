@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente sair esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador para ver como as imagens se comportam.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1080px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <hr>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos tentar reproduzir um áudio em <abbr title="linguagem de marcação">ling</abbr></p>
+    <audio src="media/guanacast-33.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG limitado a esses formatos-->
+    <hr>
+    <h1>Reproduzindo audios com diferentes formatos</h1>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.OGG" type="audio/ogg">
+        <p>Infelizmente seu  navegador não suporta áudio. Clique <a href="midia/guanacast-33.mp3">aqui</a> para fazer o dowload do arquivo --MP3 </p>
+    </audio>
+</body>
+</html>
