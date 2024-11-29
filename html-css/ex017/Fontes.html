@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importando fontes </title>
+    <!--font family = família de fonte
+        font size = tamanho = recomendado px e em
+        font weigth = grossura da fonte
+        -->
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+            /*devee ficar fora do body-->
+            body */
+            body 
+            /* Metodo para importar fontes*/
+                @font-face {
+                    font-family: voceescolhe;
+                    src: url(EduAUVICWANTArrows-SemiBold.ttf) fomat ("truetype");
+                    font-weight: normal;
+                    font-style: normal;
+
+                    /* tipos de formato de fonte
+                    opentype(otf)
+                    truetype(ttf)
+                    embedded-opentype
+                    truetype-aat (apple advanced typography)
+                    SVG*/
+                }
+                h1 {
+                font-family: 'voceescolhe';
+                font-optical-sizing: auto;
+                font-size: 60px;
+                font-weight: <weight>;
+                font-style: normal;
+                 
+                }
+
+        </style>
+</head>
+<body>
+    <h1>Importando fontes</h1>
+</body>
+</html>
