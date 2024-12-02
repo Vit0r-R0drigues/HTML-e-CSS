@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+<!--Grouping tags são div são divs semânticas e mais especificas-->
+<!--/*header é um grupo de tags que representa a cabeça da página Cabeçalho*/
+/* nav é um grupo de tags que representa a navegação da página*/
+/*main é um grupo de tags que representa o conteúdo principal da página*/
+*section é um grupo de tags que representa um bloco de conteúdo*/
+/*article é um grupo de tags que representa um item de conteúdo*/
+/*aside é um grupo de tags que representa um bloco de conteúdo secundário*/
+/*footer é um grupo de tags que representa o rodapé da página*/-->
+
+    <style>
+        body {
+            background-color: rgb(243, 243, 243);
+            
+                   }
+        h1#titulo{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        header {
+            background-color: rgb(194, 194, 194);
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(182, 182, 182);
+            font-size: 20px;
+            text-align: right;
+            padding: 5;
+            box-shadow: 3px 2px 10px black;
+        
+            
+
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(3, 18, 100);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            color: #830202;
+            text-decoration: underline;}
+
+
+            main {
+                background-color: ;
+                color: rgb(255, 16, 16);
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                text-align: justify;
+                padding: 10px;
+                margin: 10px; 
+                box-shadow: 2px 2px 10px black;
+                border-radius: 10px 50px 10px 50px;
+            }
+
+            footer {
+                background-color: #b1b0b0;
+                text-align: center;
+                color: black;
+                text-decoration: underline;
+                font-weight: 900;
+                padding: 5px;
+                margin: 0px;
+            }
+            
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Testando os Grouping</h1>
+    <hr>
+    <header> 
+        <h1>Meu site</h1>
+        <nav> 
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="assuntos">
+
+        </section>
+
+        <section id="noticias">
+            <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero temporibus eos quam molestiae sit quisquam eveniet amet ut repudiandae obcaecati alias cumque fugit explicabo iusto facilis maiores autem, dolorum modi.</p>
+                    <aside>
+                        <p>Artigo escritor por João</p>
+                    </aside>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        Desenvolvido por Vitor Rodrigues
+    </footer>
+</body>
+</html>
+
+
+
+

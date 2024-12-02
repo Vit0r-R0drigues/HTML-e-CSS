@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+}
+
+header {
+    text-align: center;
+    background-color: #2EA764;
+    
+}
+
+nav {
+    text-align: left;
+
+
+}   
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-top: 20px;
+
+}
+
+nav > a:hover {
+    color: #2e40a7;
+
+}

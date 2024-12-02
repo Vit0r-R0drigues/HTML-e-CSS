@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex006/favicon-16x16.png" type="image/x-icon">
+    <title>pseudo em elementos</title>
+    <style>
+        body {
+            background-color: #05be71;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 20 px;
+            color: black;
+            font-weight: bold;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+       a:visited { /*Visited é quando o usuário já visitou a página deixar a cor do link diferente */
+        color: darkred;
+
+        }
+        a::hover { /*hover é quando o usuário passa o mouse sobre o link ele altera a cor*/
+            color: #8cb8eb;
+            text-decoration: underline;
+        }
+
+        a::active{ /*active é quando o usuário clicar no link ele altera a cor*/
+            color: yellow;
+
+        }
+        .especial:before { /*antes de tudo que está dentro do a ele adiciona uma seta*/
+            content: "~~> ";
+        }
+        .especial:after { /*depois de tudo que está dentro do a ele adiciona uma seta*/
+            content: ' <~~';
+        }
+
+        /* importante para criar os seletores personalizados
+            # = id
+            . = classe
+            : = pseudo class
+            :: = pseudo elemento
+            > = cildren / Filho
+        */
+
+    </style>
+</head>
+<body>
+    <h1 class="especial">Videos musicais que eu recomendo</h1>
+    <hr>
+   
+    <a href="v1.html"target="_self"><img src="Teste 1"alt="img1"></a>
+    <br><hr>
+
+    <a href="v2.html" target="_self"><img src="teste 2"alt="img2"></a>
+    <br><hr>
+
+    <a href="v3.html" target="_self"><img src="teste 3" alt="img3"></a>
+    <br><hr>
+    
+    <a href="v4.html" target="_self"><img src="teste 4" alt="img4"></a>
+
+
+</body>
+</html>

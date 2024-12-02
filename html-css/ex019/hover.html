@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <!--Hover deixa o texto ou imagem ao passar o mouse com cores diferentes-->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            color: black;
+           font-size: 60px;
+        }
+        div > p {/* seleciona o parágrafo dentro do div*/
+            display: none; /* oculta o parágrafo */
+        }
+        div:hover > p {/* quando o mouse passa pelo div, o parágrafo aparece*/
+        display: block; /* faz com que o parágrafo apareça */
+        color: red;
+        width: 300px; /* largura do parágrafo */
+        }
+
+        div:hover {
+            color: blue;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Eu sou o hover da div </p>
+    </div>
+</body>
+</html>
