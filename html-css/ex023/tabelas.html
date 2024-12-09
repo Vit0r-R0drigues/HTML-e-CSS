@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Tabela</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        tr.segunda{
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black;
+
+        }
+
+        td.dado{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--Todas as tabelas tema seguinte hierarquia 
+    Table = tabela
+        TR = Table Row = linha de tabela 
+            TH = Table Header = cabçalho da tabela
+            TD = Table Data = dados de tabela           
+            -->
+    <table>
+        <tr> <!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="segunda"> <!--Segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>B2</td>
+        </tr>
+        <tr> <!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>B3</td>
+        </tr>
+        <tr> <!--Quarta linha-->
+            <td>A4</td>
+            <td class= 'dado'>B4</td >
+            <td>B4</td>
+        </tr>
+    </table>
+</body>
+</html>
