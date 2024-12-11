@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de tabelas </title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(185, 176, 176);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        h1{
+            text-align: center;
+        }
+
+        table{
+            width: 600px;
+            height: 300px;
+            border-collapse: collapse;
+        
+
+        }
+
+        tr, td, th{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Criando tabelas</h1>
+    </header>
+    <table>
+        <thead>
+            <th colspan="100%">Testando tabelas</th>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td colspan="3">8</td>
+            </tr>
+            <tr>
+                 <td>9</td>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+        </thead>
+        
+    </table>
+    <footer>
+        <p>&copy;<a href="https://www.instagram.com/vitor_rodri_cont/" target="_blank">Vitor Rodrigues</a>Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 300px;
+        }
+
+        caption{
+            font-size: 20px;
+            color: black;
+
+        }
+
+        td, th, tr{
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicio de tabelas</h1>
+    <table>
+        <caption><strong>Filmes favoritos</strong></caption>
+        <thead>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Thaune Lima</td>
+                <td>The vampire diaries</td>
+                <td>Crepusculo</td>
+                <td>5 passos</td>
+            </tr>
+            <tr>
+                <td>Frncinete</td>
+                <td>inacio garapa</td>
+                <td>Ai que vida </td>
+                <td>alto da comparecida</td>
+            </tr>
+            <tr>
+                <td>Rata branca</td>
+                <td>Miauscu</td>
+                <td>Tom e jerry</td>
+                <td>garfild</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Vitor Rodri</td>
+                <td>Vingadores</td>
+                <td>Harry potter</td>
+                <td>Senhor dos aneis</td>
+            </tr>
+            <tr>
+                <td>Ryan </td>
+                <td>O jogo da vida</td>
+                <td>Freefire</td>
+                <td>jogando a vida</td>
+            </tr>
+            <tr>
+                <td>Bidu</td>
+                <td>A cachorrada</td>
+                <td>Meu latido preferido</td>
+                <td>America latidos</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
