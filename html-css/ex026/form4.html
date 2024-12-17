@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Checkbox, Radio e Select button</h1>
+    <form action="cadastro.php" method="get">
+
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="isxmas">
+        <input type="radio" name="sexo" id="isxfem">
+    </fieldset>
+<!--Radio Button é para escolher apenas uma opção, deve ter o mesmo name e o id diferente-->
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+        <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+        <input type="checkbox" name="esnat" id="iesnat"> <label for="natação">Natação</label> <br>
+        <input type="checkbox" name="esten" id="iesten"> <label for="tenis">Tênis</label> <br>
+
+    </fieldset>
+<!--Checkbox é para escolher mais de uma opção-->
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+
+    </form>
+</body>
+</html>
