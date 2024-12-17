@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Select, Option, datalist, textarea</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="iest">Estados</label>
+            <select name="estado" id="iest">
+                <optgroup label="Suldeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="CE">Ceara</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" id="iprof" name="prof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="FISIO">Fisioterapeuta</option>
+                <option value="MEDI">Médico</option>
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
