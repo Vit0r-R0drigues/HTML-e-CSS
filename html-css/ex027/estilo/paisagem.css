@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES DEITADO (LANDSCAPE)*/
+
+body{
+    background-image: url('../imagens/imagens/cev-landscape.jpg');
+    background-size: 100% 100%;
+    background-position: left bottom;
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES EM PÉ (POTRAIT)*/
+
+body{
+    background-image: url(../imagens/imagens/cev-portrait.jpg);
+    background-size: contain;
+    background-size: 100% 100%;
+}
