@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 *{
-    margin: 0;
-    height: 0;
+    margin: 0px;
+    height: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     box-sizing: border-box;
@@ -17,6 +17,7 @@ html, body{
 body{
     background: black url(../imagens/imagens/back-phone.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
 
 }
@@ -24,10 +25,16 @@ body{
 main{
     background-color: antiquewhite;
     width: 600px;
+    height: 400px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
+}
+
+main img{
+    width: 100%;
+    height: 100%;
 }
 
 h1{
@@ -36,7 +43,9 @@ h1{
 
 }
 
-img#phone{display: none}
+
+
+img#phone{display: block}
 img#tablet{display: none}
 img#impressora{display: none}
 img#tv{display: none}
