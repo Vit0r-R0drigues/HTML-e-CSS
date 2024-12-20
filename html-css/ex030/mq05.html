@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="../ex030/estilo/style.css">
+    <link rel="stylesheet" href="../estilo/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>meu site</h1>
+        <i id= 'burguer' class="fi fi-br-list" onclick="clickMenu()"></i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">sobre</a></li>
+                <li><a href="#">serviços</a></li>
+                <li><a href="#">contatos</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>criando variações do site</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum aliquid laboriosam enim excepturi ad dolores quibusdam nihil iure amet, natus ipsa neque. Optio porro officiis reprehenderit animi laborum earum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum corporis temporibus voluptas deserunt assumenda praesentium consectetur. Aliquam doloribus debitis asperiores possimus corrupti, est similique quisquam. Laudantium culpa officiis sunt praesentium!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum aliquid laboriosam enim excepturi ad dolores quibusdam nihil iure amet, natus ipsa neque. Optio porro officiis reprehenderit animi laborum earum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum corporis temporibus voluptas deserunt assumenda praesentium consectetur. Aliquam doloribus debitis asperiores possimus corrupti, est similique quisquam. Laudantium culpa officiis sunt praesentium!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum aliquid laboriosam enim excepturi ad dolores quibusdam nihil iure amet, natus ipsa neque. Optio porro officiis reprehenderit animi laborum earum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum corporis temporibus voluptas deserunt assumenda praesentium consectetur. Aliquam doloribus debitis asperiores possimus corrupti, est similique quisquam. Laudantium culpa officiis sunt praesentium!</p>
+        </article>
+    </main>
+    <script>
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            } else { itens.style.display = 'none' }
+        }
+
+        function clickMenu(){
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none';
+           } else {
+                itens.style.display = 'block';
+           }
+
+        }
+    </script>
+</body>
+</html>
