@@ -1,0 +1,53 @@
+@charset "UTF-8";
+ 
+@media screen and (max-width: 849px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header {
+        flex-flow: column wrap;
+    }
+
+    header > h1 {
+        flex: 0 0 40px;
+    }
+
+    header > nav > ul {
+        flex-flow: column nowrap;
+        width: 100vw;
+        height: auto;
+        align-items: center;
+        gap: 3px;
+        padding: 3px;
+
+        cursor: pointer;
+        background: rgb(31, 30, 30);
+        overflow: hidden;
+
+    }
+
+    header > nav > ul > li {
+        background: rgb(73, 65, 65);
+        width: 90vw;
+        text-align: center;
+        padding: 8px;
+        color: white;
+    }
+
+    header > nav > ul > li:hover{
+        color: rgb(109, 46, 1);
+        gap: 10px;
+        background-color: beige;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    header > nav > ul > li > a{
+        background: none;
+        display: block;
+        width: 90vw;
+    }
+    
+
+    
