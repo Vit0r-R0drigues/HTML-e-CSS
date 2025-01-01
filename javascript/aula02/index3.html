@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    
+    <script>
+        var nome = String(window.prompt('Qual seu nome? ')) 
+        
+        var idade = Number(window.prompt('Qual sua idade? '))
+
+        document.write(`<h2>Seu nome tem ${nome.length} letras</h2> <br>`)
+        // document.white é um método que escreve no documento, mas não é recomendado usar
+        document.write(`<h2>Seu nome é ${nome}</h2> <br>`)
+        document.write(`<h2>Seu nome em maiusculo é ${nome.toUpperCase()}</h2> <br>`)
+        document.write(` <h1>Seu nome em minusculo é ${nome.toLowerCase()} </h1> <br>`)
+    </script>
+</body>
+</html>
